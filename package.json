@@ -1,6 +1,6 @@
 {
-  "name": "electron-react-boilerplate",
-  "description": "A foundation for scalable desktop apps",
+  "name": "winz",
+  "description": "Open source package installer for windows",
   "scripts": {
     "build": "concurrently \"npm run build:main\" \"npm run build:renderer\"",
     "build:main": "cross-env NODE_ENV=production TS_NODE_TRANSPILE_ONLY=true webpack --config ./.erb/configs/webpack.config.main.prod.ts",
@@ -30,8 +30,8 @@
     ]
   },
   "build": {
-    "productName": "ElectronReact",
-    "appId": "org.erb.ElectronReact",
+    "productName": "WinZ",
+    "appId": "org.erb.WinZ",
     "asar": true,
     "asarUnpack": "**\\*.{node,dll}",
     "files": [
@@ -70,7 +70,7 @@
     },
     "win": {
       "target": [
-        "nsis"
+        "portable"
       ]
     },
     "linux": {
@@ -89,34 +89,34 @@
     ],
     "publish": {
       "provider": "github",
-      "owner": "electron-react-boilerplate",
-      "repo": "electron-react-boilerplate"
+      "owner": "WinZ",
+      "repo": "WinZ"
     }
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/electron-react-boilerplate/electron-react-boilerplate.git"
+    "url": "git+https://github.com/MonsieurZed/WinZ.git"
   },
   "author": {
-    "name": "Electron React Boilerplate Maintainers",
-    "email": "electronreactboilerplate@gmail.com",
-    "url": "https://electron-react-boilerplate.js.org"
+    "name": "WinZ",
+    "email": "thibault.feuvrier@hotmail.fr",
+    "url": "https://github.com/MonsieurZed/WinZ/"
   },
   "contributors": [
     {
-      "name": "Amila Welihinda",
-      "email": "amilajack@gmail.com",
-      "url": "https://github.com/amilajack"
+      "name": "Thibault Feuvrier",
+      "email": "thibault.feuvrier@hotmail.fr",
+      "url": "https://github.com/MonsieurZed"
     },
     {
-      "name": "John Tran",
-      "email": "jptran318@gmail.com",
-      "url": "https://github.com/jooohhn"
+      "name": "Mickael Rose",
+      "email": "Mickael.rose.web@gmail.com",
+      "url": "https://github.com/Skorchy"
     }
   ],
-  "license": "MIT",
+  "license": "GNU2",
   "bugs": {
-    "url": "https://github.com/electron-react-boilerplate/electron-react-boilerplate/issues"
+    "url": "https://github.com/MonsieurZed/WinZ/issues"
   },
   "keywords": [
     "electron",
@@ -230,6 +230,7 @@
     "electron-log": "^4.4.4",
     "electron-updater": "^4.6.5",
     "history": "^5.2.0",
+    "powershell": "^2.3.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.2.1"

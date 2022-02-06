@@ -1,12 +1,12 @@
 {
-  "name": "electron-react-boilerplate",
-  "version": "4.5.0",
-  "description": "A foundation for scalable desktop apps",
+  "name": "winz",
+  "version": "1.0.0",
+  "description": "Open source package installer for windows",
   "main": "./dist/main/main.js",
   "author": {
-    "name": "Electron React Boilerplate Maintainers",
-    "email": "electronreactboilerplate@gmail.com",
-    "url": "https://github.com/electron-react-boilerplate"
+    "name": "WinZ Maintainers",
+    "email": "thibault.feurier@hotmail.fr",
+    "url": "https://github.com//WinZ"
   },
   "scripts": {
     "electron-rebuild": "node -r ts-node/register ../../.erb/scripts/electron-rebuild.js",
@@ -14,5 +14,5 @@
     "postinstall": "npm run electron-rebuild && npm run link-modules"
   },
   "dependencies": {},
-  "license": "MIT"
+  "license": "GNU2"
 }
